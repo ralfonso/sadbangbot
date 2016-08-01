@@ -1,0 +1,119 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/BurntSushi/toml",
+			"repository": "https://github.com/BurntSushi/toml",
+			"vcs": "git",
+			"revision": "99064174e013895bbd9b025c31100bd1d9b590ca",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/ChimeraCoder/anaconda",
+			"repository": "https://github.com/ChimeraCoder/anaconda",
+			"vcs": "git",
+			"revision": "00ecb7b4510497dc28cd46a598007ab8fe01f889",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/ChimeraCoder/tokenbucket",
+			"repository": "https://github.com/ChimeraCoder/tokenbucket",
+			"vcs": "git",
+			"revision": "c5a927568de7aad8a58127d80bcd36ca4e71e454",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/Sirupsen/logrus",
+			"repository": "https://github.com/Sirupsen/logrus",
+			"vcs": "git",
+			"revision": "a283a10442df8dc09befd873fab202bf8a253d6a",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/azr/backoff",
+			"repository": "https://github.com/azr/backoff",
+			"vcs": "git",
+			"revision": "53511d3c733003985b0b76f733df1f4d0095ee6a",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/dustin/go-jsonpointer",
+			"repository": "https://github.com/dustin/go-jsonpointer",
+			"vcs": "git",
+			"revision": "2efc9fef1d9421a8d252a32e20beb10cecd2bbca",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/dustin/gojson",
+			"repository": "https://github.com/dustin/gojson",
+			"vcs": "git",
+			"revision": "2e71ec9dd5adce3b168cd0dbde03b5cc04951c30",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/garyburd/go-oauth/oauth",
+			"repository": "https://github.com/garyburd/go-oauth",
+			"vcs": "git",
+			"revision": "719b069913e1151a73ea30d2ea4f90deda3ce234",
+			"branch": "master",
+			"path": "/oauth",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/sirupsen/Logrus",
+			"repository": "https://github.com/sirupsen/Logrus",
+			"vcs": "git",
+			"revision": "a283a10442df8dc09befd873fab202bf8a253d6a",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/urfave/cli",
+			"repository": "https://github.com/urfave/cli",
+			"vcs": "git",
+			"revision": "b616f6088660d2eaa33739718f0583f8d467a178",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/sys/unix",
+			"repository": "https://go.googlesource.com/sys",
+			"vcs": "git",
+			"revision": "a646d33e2ee3172a661fc09bca23bb4889a41bc8",
+			"branch": "master",
+			"path": "/unix",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/airbrake/gobrake.v2",
+			"repository": "https://gopkg.in/airbrake/gobrake.v2",
+			"vcs": "git",
+			"revision": "31c8ff1fb8b79a6947e6565e9a6df535f98a6b94",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/gemnasium/logrus-airbrake-hook.v2",
+			"repository": "https://gopkg.in/gemnasium/logrus-airbrake-hook.v2",
+			"vcs": "git",
+			"revision": "31e6fd4bd5a98d8ee7673d24bc54ec73c31810dd",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/yaml.v2",
+			"repository": "https://gopkg.in/yaml.v2",
+			"vcs": "git",
+			"revision": "e4d366fc3c7938e2958e662b4258c7a89e1f0e3e",
+			"branch": "v2",
+			"notests": true
+		}
+	]
+}
