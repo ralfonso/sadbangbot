@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/binary"
 	"os"
 	"regexp"
 
@@ -8,6 +9,7 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/ralfonso/sadbangbot/streaming"
 	"github.com/urfave/cli"
+	"github.com/willf/bloom"
 	"golang.org/x/net/context"
 )
 
@@ -43,6 +45,7 @@ var (
 	}
 
 	sadRe = regexp.MustCompile("[[:punct:]][ ]{0,2}Sad!$")
+	bf    = bloom.New(20*20000, 5)
 )
 
 func main() {
@@ -81,6 +84,15 @@ func filterFunc(tweet anaconda.Tweet) bool {
 	// log.WithFields(log.Fields{
 	// 	"tweet.text": tweet.Text,
 	// }).Debug("checking tweet")
+	buf := make([]byte, binary.MaxVarintLen64)
+	written := binary.PutVarint(buf, tweet.Id)
+	if written == 0 {
+		return false
+	}
+	if bf.Test(buf) {
+		return false
+	}
+	bf.Add(buf)
 	return sadRe.Match([]byte(tweet.Text))
 }
 
